@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { Header } from './components/header'
+import { Nav } from './components/Nav'
 
 export const RickAndMortyApp = () => {
 
   return (
     <>
 
-      <Header />
+      <Nav />
 
     </>
   )

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../css/Header.css'
 import { Location } from './Location'
 import { getLocation } from '../helpers/getLocation'
-export const Header = () => {
+export const Nav = () => {
     const [location, setLocation] = useState()
    
     const getCurrentLocation = async ()=>{
@@ -34,7 +34,7 @@ export const Header = () => {
                 </form>
 
               {/* =======INFORMACION DE LA LOCATION ACTUAL=========== */}
-              <Location location={location} />
+              <Location location = {location} />
 
             </header>
         </>
