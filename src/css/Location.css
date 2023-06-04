@@ -1,0 +1,40 @@
+/* ======================INFORMACION DE LA LOCATION ACTUAL============================= */
+
+.container_info_location
+{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 30px 0px;
+    justify-self: center;
+}
+
+.dimension_name
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    text-align: center;
+    
+}
+
+.container_type, .container_population, .container_location{
+
+    height: 100%;
+    border: 1px solid #8EFF8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 5px;
+    background: #000;
+
+
+}
+
+.title
+{
+    color: #8EFF8B;
+}
