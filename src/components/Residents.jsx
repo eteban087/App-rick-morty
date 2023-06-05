@@ -20,19 +20,18 @@ export const Residents = ({ resident }) => {
 
     }
 
-
     return (
         <>
-        
+
             <div className="car_resident">
-                
+
                 <div className="image_container">
                     <img src={residents?.image} alt="" />
                     <div className="center">
-                    <div className="status_container">
-                        <div className={statusResidents[residents?.status]}></div>
-                        <p>{residents?.status}</p>
-                    </div>
+                        <div className="status_container">
+                            <div className={statusResidents[residents?.status]}></div>
+                            <p>{residents?.status}</p>
+                        </div>
                     </div>
                 </div>
 

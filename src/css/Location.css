@@ -2,26 +2,41 @@
 
 .container
 {
+    max-width: 1200px;
     width: 100%;
     padding: 0px 20px;
+    margin: auto;
 }
 
 .container_info_location
 {
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(3,1fr);
     align-items: center;
-    gap: 30px 0px;
+    gap: 10px 0px;
     justify-self: center;
 }
 
-.dimension_name
+.container_title
 {
     grid-column-start: 1;
     grid-column-end: 4;
     justify-self: center;
+    text-align: center;
+    
+}
+
+.name
+{
+   
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     
 }
@@ -36,6 +51,7 @@
     text-align: center;
     padding: 5px;
     background: #000;
+    grid-row-start: 3;
 
 
 }

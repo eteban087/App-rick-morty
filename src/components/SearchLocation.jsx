@@ -14,7 +14,8 @@ export const SearchLocation = ({hanledLocation}) => {
     setInputvalue("")
   }
   return (
-    <form onSubmit={onSubmit} className="container_input">
+    
+      <form onSubmit={onSubmit} className="container_input">
         <input 
           type="text" 
           placeholder='Type a location id...'
@@ -22,7 +23,11 @@ export const SearchLocation = ({hanledLocation}) => {
           onChange={SearchLocation}
 
          />
-         <button onClick={onSubmit}>buscar</button>
+         <button onClick={onSubmit}>
+          Search
+          <i className="fa-solid fa-magnifying-glass"></i>
+         </button>
     </form>
+    
   )
 }

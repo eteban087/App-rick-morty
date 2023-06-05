@@ -9,11 +9,11 @@ export const Location = ({ location }) => {
 
             <div className="container">
                 <div className='container_info_location'>
-
-                    <div className="dimension_name">
-                        <h2 className='title'>¡Welcome to the crazy universe!</h2>
+                    
+                    <div className="container_title">
+                        <h1 className='title'>¡Welcome to the crazy universe!</h1>
                     </div>
-
+                    <div className='name'><h3>{location?.name}</h3></div>
                     <div className="container_type">
                         <p>type: {location?.type}</p>
                     </div>

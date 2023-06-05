@@ -7,6 +7,7 @@ input
     border: 2px solid #8EFF8B;
     color: #938686;
     font-size: 1rem;
+    
 }
 
 input::placeholder
@@ -20,9 +21,12 @@ input::placeholder
     width: 500px;
     max-width: 100%;
     padding: 0px 20px;
-    position: absolute;
     top: 300px;
     display: flex;
+    margin: 20px auto 30px auto;
+   
+    
+
     
 }
 
@@ -33,4 +37,12 @@ button
     outline: none;
     border: 2px solid #8EFF8B;
     width: 200px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+
+
+  

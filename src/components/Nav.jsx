@@ -1,15 +1,13 @@
 import '../css/Nav.css'
-import { SearchLocation } from './SearchLocation'
+// import { SearchLocation } from './SearchLocation'
 
-export const Nav = ({hanledLocation}) => {
+export const Nav = () => {
 
-    
-   
     return (
         <>
             <header className='header'>
 
-                 {/* ==============IMAGEN SUPERIOR DEL HEADER=========== */}
+                {/* ==============IMAGEN SUPERIOR DEL HEADER=========== */}
                 <div className="imagen_header">
                     <img src="/img/headerImage.svg" alt="" />
                     <div className="title_header">
@@ -17,8 +15,6 @@ export const Nav = ({hanledLocation}) => {
                     </div>
                 </div>
 
-
-                <SearchLocation hanledLocation =  {hanledLocation}  />
 
             </header>
         </>

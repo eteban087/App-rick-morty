@@ -5,20 +5,21 @@ import { useGetData } from './hooks/useGetData'
 import { getRamdomLocation } from './helpers/getRamdomLocation'
 import { Residents } from './components/Residents'
 import "./css/Residents.css"
+import { SearchLocation } from './components/SearchLocation'
 
 export const RickAndMortyApp = () => {
 
   const [location, setLocation] = useState(null)
 
   const getCurrentLocation = async () => {
-    
+
     const { data: location } = await useGetData(`https://rickandmortyapi.com/api/location/${getRamdomLocation()}`);
     setLocation(location)
 
   }
 
-  const hanledLocation = async (newLocation) =>{
-    console.log(newLocation)
+  const hanledLocation = async (newLocation) => {
+
     const { data: location } = await useGetData(`https://rickandmortyapi.com/api/location/${newLocation}`);
     setLocation(location)
 
@@ -28,12 +29,13 @@ export const RickAndMortyApp = () => {
     getCurrentLocation();
   }, [])
 
-  console.log(location  )
+
 
   return (
     <>
 
-      <Nav hanledLocation={hanledLocation} />
+      <Nav />
+      <SearchLocation hanledLocation={hanledLocation} />
       <Location location={location} />
 
       <div className="container_residents">
