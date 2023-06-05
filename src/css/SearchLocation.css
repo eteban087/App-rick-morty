@@ -22,5 +22,15 @@ input::placeholder
     padding: 0px 20px;
     position: absolute;
     top: 300px;
+    display: flex;
     
+}
+
+button
+{
+    background: #568554;
+    color: #fff;
+    outline: none;
+    border: 2px solid #8EFF8B;
+    width: 200px;
 }

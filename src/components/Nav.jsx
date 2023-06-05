@@ -1,7 +1,9 @@
 import '../css/Nav.css'
 import { SearchLocation } from './SearchLocation'
 
-export const Nav = () => {
+export const Nav = ({hanledLocation}) => {
+
+    
    
     return (
         <>
@@ -16,7 +18,7 @@ export const Nav = () => {
                 </div>
 
 
-                <SearchLocation />
+                <SearchLocation hanledLocation =  {hanledLocation}  />
 
             </header>
         </>
