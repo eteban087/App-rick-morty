@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Nav } from './components/Nav'
-import { Location } from './components/Location'
+import { Nav, Location,SearchLocation, Residents } from './components'
 import { useGetData } from './hooks/useGetData'
 import { getRamdomLocation } from './helpers/getRamdomLocation'
-import { Residents } from './components/Residents'
 import "./css/Residents.css"
-import { SearchLocation } from './components/SearchLocation'
+
 
 export const RickAndMortyApp = () => {
 
@@ -25,8 +23,11 @@ export const RickAndMortyApp = () => {
 
   }
 
+
+
   useEffect(() => {
     getCurrentLocation();
+   
   }, [])
 
 
