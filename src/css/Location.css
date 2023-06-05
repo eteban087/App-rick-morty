@@ -1,5 +1,11 @@
 /* ======================INFORMACION DE LA LOCATION ACTUAL============================= */
 
+.container
+{
+    width: 100%;
+    padding: 0px 20px;
+}
+
 .container_info_location
 {
     width: 100%;
@@ -28,7 +34,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0px 5px;
+    padding: 5px;
     background: #000;
 
 

@@ -1,21 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import '../css/Header.css'
-import { Location } from './Location'
-import { getLocation } from '../helpers/getLocation'
+import '../css/Nav.css'
+import { SearchLocation } from './SearchLocation'
+
 export const Nav = () => {
-    const [location, setLocation] = useState()
    
-    const getCurrentLocation = async ()=>{
-        const location = await getLocation();
-        setLocation(location);
-    }
-
-    useEffect(() => {
-      getCurrentLocation();
-    }, [])
-    
-    
-
     return (
         <>
             <header className='header'>
@@ -28,13 +15,8 @@ export const Nav = () => {
                     </div>
                 </div>
 
-                 {/* ======================FORMULARIO================= */}
-                <form className="container_input">
-                    <input type="text" placeholder='Type a location id...' />
-                </form>
 
-              {/* =======INFORMACION DE LA LOCATION ACTUAL=========== */}
-              <Location location = {location} />
+                <SearchLocation />
 
             </header>
         </>

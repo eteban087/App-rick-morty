@@ -1,0 +1,26 @@
+input
+{
+    width: 100%;
+    outline: none;
+    background: #000;
+    padding: 10px;
+    border: 2px solid #8EFF8B;
+    color: #938686;
+    font-size: 1rem;
+}
+
+input::placeholder
+{
+    color: #938686;
+}
+
+
+.container_input
+{
+    width: 500px;
+    max-width: 100%;
+    padding: 0px 20px;
+    position: absolute;
+    top: 300px;
+    
+}
